@@ -1,0 +1,13 @@
+{
+  "name": "laticapp",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Tom Pennington",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.13.4",
+    "hogan-express": "^0.5.2",
+    "q": "^1.4.1",
+    "twitter": "^1.2.5"
+  }
+}
