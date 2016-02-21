@@ -40,7 +40,7 @@ $(document).ready(function() {
 
   function hideLoadScreen() {
     window.setTimeout(function() {
-      $(".load").fadeOut();
+      $(".load").addClass("fadeOutUpBig");
     }, 2000);
   }
 });
