@@ -1,0 +1,3 @@
+# laticapp
+
+NodeJS Application
