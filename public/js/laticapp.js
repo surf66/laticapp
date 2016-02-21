@@ -4,13 +4,13 @@ $(document).ready(function() {
     url: "/tweets",
     context: document.body
   }).done(function(data) {
-    console.log(data);
     renderHandlebarsTemplate('templates/tweets.handlebars', '#results', data);
   });
 
   function renderHandlebarsTemplate(withTemplate, inElement, withData){
     getTemplateAjax(withTemplate, function(template) {
       $(inElement).html(template(withData));
+      hideLoadScreen();
     });
   };
 
@@ -24,5 +24,11 @@ $(document).ready(function() {
         if (callback) callback(template);
       }
     });
+  }
+
+  function hideLoadScreen() {
+    window.setTimeout(function() {
+      $(".load").fadeOut();
+    }, 2000);
   }
 });
