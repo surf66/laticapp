@@ -22,7 +22,6 @@ $(document).ready(function() {
   function renderHandlebarsTemplate(withTemplate, inElement, withData){
     getTemplateAjax(withTemplate, function(template) {
       $(inElement).html(template(withData));
-      hideLoadScreen();
     });
   };
 
@@ -36,11 +35,5 @@ $(document).ready(function() {
         if (callback) callback(template);
       }
     });
-  }
-
-  function hideLoadScreen() {
-    window.setTimeout(function() {
-      $(".load").addClass("fadeOutUpBig");
-    }, 2000);
   }
 });

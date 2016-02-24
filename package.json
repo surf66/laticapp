@@ -5,8 +5,15 @@
   "author": "Tom Pennington",
   "license": "ISC",
   "devDependencies": {
+    "body-parser": "^1.15.0",
+    "connect-ensure-login": "^0.1.1",
+    "cookie-parser": "^1.4.1",
     "express": "^4.13.4",
+    "express-session": "^1.13.0",
     "hogan-express": "^0.5.2",
+    "morgan": "^1.7.0",
+    "passport": "^0.3.2",
+    "passport-strategy": "^1.0.0",
     "q": "^1.4.1",
     "twitter": "^1.2.5"
   }

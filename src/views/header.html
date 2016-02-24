@@ -1,13 +1,18 @@
-<div class="load animated">
-  <div class="message">
-    <img class="animated fadeIn" src="images/latics.png" alt="Wigan Athletic" />
-    <h1 class="animated fadeIn">LaticApp</h1>
+<div class="loading animated {{loading}}">
+  <div class="message animated fadeIn">
+    <img src="images/latics.png" alt="Wigan Athletic" />
+    <h1>LaticApp</h1>
+    <a href="/login/twitter"><span class="icon-twitter"></span>Login with Twitter</a>
   </div>
 </div>
 <div class="header">
   <div class="container">
-    <img src="images/latics.png" alt="Wigan Athletic" />
     <h1>LaticApp</h1>
+    <div class="user">
+      <img src="{{user._json.profile_image_url}}" alt="{{user.displayName}}" />
+      <span>{{user.displayName}}</span>
+      <span>&#64;{{user.username}}</span>
+    </div>
   </div>
 </div>
 <div class="container main">
