@@ -10,6 +10,8 @@
     "cookie-parser": "^1.4.1",
     "express": "^4.13.4",
     "express-session": "^1.13.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.2.0",
     "hogan-express": "^0.5.2",
     "morgan": "^1.7.0",
     "passport": "^0.3.2",

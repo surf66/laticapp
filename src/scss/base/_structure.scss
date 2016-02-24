@@ -1,0 +1,28 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.main {
+  margin-top: 60px;
+}
+
+@media (max-width: 780px) {
+  .container {
+    width: 90%;
+  }
+}
