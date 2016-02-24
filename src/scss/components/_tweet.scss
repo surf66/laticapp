@@ -1,38 +1,40 @@
 .tweet {
   border-bottom: 1px solid #eee;
   padding: 30px 0;
+
+  h2 {
+    float: left;
+    margin: 10px 0 0;
+    font-weight: lighter;
+    color: #767777;
+    font-size: 1.4em;
+  }
+
+  img {
+    margin: 0 10px 0 0;
+    float: left;
+    border-radius: 100%;
+  }
 }
 
 .tweet-header {
   display: inline-block;
 }
 
-.tweet h2 {
-  float: left;
-  margin: 10px 0 0;
-  font-weight: lighter;
-  color: #767777;
-  font-size: 1.4em;
-}
+.tweet-meta {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
 
-.tweet img {
-  margin: 0 10px 0 0;
-  float: left;
-  border-radius: 100%;
-}
+  li {
+    display: inline-block;
+    margin: 0 10px 0 0;
+    color: #767777;
+  }
 
-.tweet-meta ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.tweet-meta li {
-  display: inline-block;
-  margin: 0 10px 0 0;
-  color: #767777;
-}
-
-.tweet-meta span {
-  margin: 0 5px 0 0;
+  span {
+    margin: 0 5px 0 0;
+  }
 }

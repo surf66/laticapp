@@ -54,13 +54,12 @@ body {
 .container {
   width: 70%;
   margin: 0 auto; }
+  @media (max-width: 780px) {
+    .container {
+      width: 90%; } }
 
 .main {
   margin-top: 60px; }
-
-@media (max-width: 780px) {
-  .container {
-    width: 90%; } }
 
 h1 {
   color: #fff;

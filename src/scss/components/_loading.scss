@@ -4,6 +4,17 @@
   height: 100%;
   background: #005DAA;
   z-index: 9999;
+
+  a {
+    background: #fff;
+    padding: 10px;
+    border-radius: 3px;
+    display: inline-block;
+
+    span {
+      margin: 0 5px 0 0;
+    }
+  }
 }
 
 .loading .message {
@@ -16,25 +27,14 @@
   left: 0;
   margin: auto;
   text-align: center;
-}
 
-.loading .message img {
-  width: 200px;
-  margin: 0 0 20px;
-}
+  img {
+    width: 200px;
+    margin: 0 0 20px;
+  }
 
-.loading .message h1 {
-  font-size: 3em;
-  margin: 10px 0 30px;
-}
-
-.loading a {
-  background: #fff;
-  padding: 10px;
-  border-radius: 3px;
-  display: inline-block;
-}
-
-.loading a span {
-  margin: 0 5px 0 0;
+  h1 {
+    font-size: 3em;
+    margin: 10px 0 30px;
+  }
 }
