@@ -116,9 +116,8 @@ footer {
   text-align: center;
   color: #767777;
   padding: 50px 0; }
-
-footer span {
-  margin: 0 5px 0 0; }
+  footer span {
+    margin: 0 5px 0 0; }
 
 .header {
   position: fixed;
@@ -126,11 +125,10 @@ footer span {
   left: 0;
   right: 0;
   background: #005DAA; }
-
-.header img {
-  width: 40px;
-  float: left;
-  margin: 0 10px 0 0; }
+  .header img {
+    width: 40px;
+    float: left;
+    margin: 0 10px 0 0; }
 
 .loading {
   position: fixed;
@@ -138,6 +136,13 @@ footer span {
   height: 100%;
   background: #005DAA;
   z-index: 9999; }
+  .loading a {
+    background: #fff;
+    padding: 10px;
+    border-radius: 3px;
+    display: inline-block; }
+    .loading a span {
+      margin: 0 5px 0 0; }
 
 .loading .message {
   width: 70%;
@@ -149,42 +154,29 @@ footer span {
   left: 0;
   margin: auto;
   text-align: center; }
-
-.loading .message img {
-  width: 200px;
-  margin: 0 0 20px; }
-
-.loading .message h1 {
-  font-size: 3em;
-  margin: 10px 0 30px; }
-
-.loading a {
-  background: #fff;
-  padding: 10px;
-  border-radius: 3px;
-  display: inline-block; }
-
-.loading a span {
-  margin: 0 5px 0 0; }
+  .loading .message img {
+    width: 200px;
+    margin: 0 0 20px; }
+  .loading .message h1 {
+    font-size: 3em;
+    margin: 10px 0 30px; }
 
 .tweet {
   border-bottom: 1px solid #eee;
   padding: 30px 0; }
+  .tweet h2 {
+    float: left;
+    margin: 10px 0 0;
+    font-weight: lighter;
+    color: #767777;
+    font-size: 1.4em; }
+  .tweet img {
+    margin: 0 10px 0 0;
+    float: left;
+    border-radius: 100%; }
 
 .tweet-header {
   display: inline-block; }
-
-.tweet h2 {
-  float: left;
-  margin: 10px 0 0;
-  font-weight: lighter;
-  color: #767777;
-  font-size: 1.4em; }
-
-.tweet img {
-  margin: 0 10px 0 0;
-  float: left;
-  border-radius: 100%; }
 
 .tweet-meta ul {
   list-style: none;
