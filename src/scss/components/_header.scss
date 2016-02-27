@@ -4,10 +4,31 @@
   left: 0;
   right: 0;
   background: #005DAA;
+  padding: 5px 0;
 
-  img {
-    width: 40px;
-    float: left;
-    margin: 0 10px 0 0;
+  .title {
+    @include span-columns(8);
+
+    img {
+      width: 48px;
+      float: left;
+      margin: 0 10px 0 0;
+    }
+  }
+
+  .user {
+    @include span-columns(4);
+    color: #fff;
+    text-align: left;
+
+    p {
+      margin: 0;
+    }
+
+    img {
+      float: left;
+      border-radius: 100%;
+      margin: 0 10px 0 0;
+    }
   }
 }

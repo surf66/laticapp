@@ -1,3 +1,9 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon.eot?jdjyg3");
@@ -124,11 +130,34 @@ footer {
   top: 0;
   left: 0;
   right: 0;
-  background: #005DAA; }
-  .header img {
-    width: 40px;
+  background: #005DAA;
+  padding: 5px 0; }
+  .header .title {
     float: left;
-    margin: 0 10px 0 0; }
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%; }
+    .header .title:last-child {
+      margin-right: 0; }
+    .header .title img {
+      width: 48px;
+      float: left;
+      margin: 0 10px 0 0; }
+  .header .user {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    color: #fff;
+    text-align: left; }
+    .header .user:last-child {
+      margin-right: 0; }
+    .header .user p {
+      margin: 0; }
+    .header .user img {
+      float: left;
+      border-radius: 100%;
+      margin: 0 10px 0 0; }
 
 .loading {
   position: fixed;

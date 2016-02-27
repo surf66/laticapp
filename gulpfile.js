@@ -5,7 +5,9 @@ var sass = require('gulp-sass');
 
 gulp.task('sass', function () {
   return gulp.src('./src/scss/**/*.scss')
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass({
+      includePaths: require('node-neat').includePaths
+    }).on('error', sass.logError))
     .pipe(gulp.dest('./public/css'));
 });
 
