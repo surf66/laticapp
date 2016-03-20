@@ -7,6 +7,13 @@ $(document).ready(function() {
     renderHandlebarsTemplate('templates/tweets.handlebars', '#results', data);
   });
 
+  $.ajax({
+    url: "/fixtures",
+    context: document.body
+  }).done(function(data) {
+    displayFixtures(data);
+  });
+
   Handlebars.registerHelper('noop', function(options) {
     var text = this.text;
     var t2 = text.replace(/(http|https)(:\/\/)([^ ]+)/ig, '<a href="$1$2$3">$1$2$3</a>' );
@@ -18,6 +25,15 @@ $(document).ready(function() {
   Handlebars.registerHelper('formatDate', function(date) {
     return moment(date).startOf('hour').fromNow();
   });
+
+  function displayFixtures(fixtures) {
+    fixtures.sort(function(a,b) {
+      return new Date(b.date).getTime() - new Date(a.date).getTime()
+    });
+
+    var nextFixture = fixtures[0];
+    renderHandlebarsTemplate('templates/next-fixture.handlebars', '#next-fixture', nextFixture);
+  }
 
   function renderHandlebarsTemplate(withTemplate, inElement, withData){
     getTemplateAjax(withTemplate, function(template) {

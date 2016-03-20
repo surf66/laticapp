@@ -1,25 +1,21 @@
+[{
+  "home": "Wigan Athletic",
+  "away": "Bury",
+  "date": "Sat Feb 20 2016 15:00:00",
+  "homeBagde": "../../public/images/wiganathletic.png",
+  "awayBagde": "../../public/images/bury.png"
+},
 {
-  "fixtures": [
-    {
-      "home": "Wigan Athletic",
-      "away": "Bury",
-      "date": "date/timestamp",
-      "homeBagde": "../../public/images/wiganathletic.png",
-      "awayBagde": "../../public/images/bury.png",
-    },
-    {
-      "home": "Wigan Athletic",
-      "away": "Walsall",
-      "date": "date/timestamp",
-      "homeBagde": "../../public/images/wiganathletic.png",
-      "awayBagde": "../../public/images/walsall.png",
-    },
-    {
-      "home": "Wigan Athletic",
-      "away": "Burton Albion",
-      "date": "date/timestamp",
-      "homeBagde": "../../public/images/wiganathletic.png",
-      "awayBagde": "../../public/images/burtonalbion.png",
-    }
-  ]
-}
+  "home": "Wigan Athletic",
+  "away": "Walsall",
+  "date": "Sat Feb 27 2016 15:00:00",
+  "homeBagde": "../../public/images/wiganathletic.png",
+  "awayBagde": "../../public/images/walsall.png"
+},
+{
+  "home": "Wigan Athletic",
+  "away": "Burton Albion",
+  "date": "Sat Mar 05 2016 15:00:00",
+  "homeBagde": "../../public/images/wiganathletic.png",
+  "awayBagde": "../../public/images/burtonalbion.png"
+}]

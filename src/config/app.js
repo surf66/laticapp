@@ -76,5 +76,10 @@ module.exports = {
         res.send(response);
       });
     });
+
+    app.get('/fixtures', function(req, res) {
+      var fixtures = require('./fixtures.json');
+      res.json(fixtures);
+    });
   }
 }
