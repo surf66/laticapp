@@ -1,17 +1,19 @@
 {{#each statuses}}
   <div class="tweet">
-    <div class="tweet-header">
-      <img src="{{user.profile_image_url}}" />
-      <h2><a href="https://twitter.com/{{user.screen_name}}" target="_blank">@{{user.screen_name}}</a>, {{user.name}}</h2>
-    </div>
-    <p>{{#noop}} {{{text}}} {{/noop}}</p>
-    <div class="tweet-meta">
-      <ul>
-        <li><span class="icon-clock"></span>{{formatDate created_at}}</li>
-        <li><span class="icon-loop"></span>{{retweet_count}}</li>
-        <li><span class="icon-heart"></span>{{favorite_count}}</li>
-        <li><span class="icon-twitter"></span>via twitter</li>
-      </ul>
+    <div class="container">
+      <div class="tweet-header">
+        <img src="{{user.profile_image_url}}" />
+        <h2><a href="https://twitter.com/{{user.screen_name}}" target="_blank">@{{user.screen_name}}</a>, {{user.name}}</h2>
+      </div>
+      <p>{{#noop}} {{{text}}} {{/noop}}</p>
+      <div class="tweet-meta">
+        <ul>
+          <li><span class="icon-clock"></span>{{formatDate created_at}}</li>
+          <li><span class="icon-loop"></span>{{retweet_count}}</li>
+          <li><span class="icon-heart"></span>{{favorite_count}}</li>
+          <li><span class="icon-twitter"></span>via twitter</li>
+        </ul>
+      </div>
     </div>
   </div>
 {{/each}}
