@@ -3,19 +3,19 @@ var app = express();
 var social = require("../functions/social.js");
 var passport = require('passport');
 var Strategy = require('passport-twitter').Strategy;
-var keys = require('../config/keys.js');
 
 module.exports = {
   setup: function() {
     app.engine('html', require('hogan-express'));
     app.set('view engine', 'html');
+    app.set('views', __dirname + '/../views');
     app.set('layout', 'layout');
     app.set('partials', {
       head: 'head.html',
       header: 'header.html',
       footer: 'footer.html'
     });
-    app.use(express.static('../public'));
+    app.use(express.static('public'));
     app.use(require('morgan')('combined'));
     app.use(require('cookie-parser')());
     app.use(require('body-parser').urlencoded({ extended: true }));
@@ -28,15 +28,13 @@ module.exports = {
   },
   startServer: function() {
     var server = app.listen(3000, function(){
-      var host = server.address().address;
-      var port = server.address().port;
-      console.log("Server up @ http://%s:%s", host, port);
+      console.log("Server up @ http://127.0.0.1:3000");
     });
   },
   setupPassport: function() {
     passport.use(new Strategy({
-        consumerKey: keys.twitterConsumerKey,
-        consumerSecret: keys.twitterConsumerSecret,
+        consumerKey: process.env.TWITTER_CONSUMER_KEY,
+        consumerSecret: process.env.TWITTER_CONSUMER_SECRET,
         callbackURL: 'http://127.0.0.1:3000/login/twitter/return'
       },
       function(token, tokenSecret, profile, cb) {

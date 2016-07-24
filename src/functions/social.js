@@ -1,16 +1,15 @@
 var Twitter = require('twitter');
 var q = require('q');
-var keys = require('../config/keys.js');
 
 module.exports = {
   getTweets: function() {
     var deferred = q.defer();
 
     var client = new Twitter({
-      consumer_key: keys.twitterConsumerKey,
-      consumer_secret: keys.twitterConsumerSecret,
-      access_token_key: keys.twitterAccessTokenKey,
-      access_token_secret: keys.twitterAccessTokenSecret
+      consumer_key: process.env.TWITTER_CONSUMER_KEY,
+      consumer_secret: process.env.TWITTER_CONSUMER_SECRET,
+      access_token_key: process.env.TWITTER_ACCESS_TOKEN_KEY,
+      access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET
     });
 
     client.get('https://api.twitter.com/1.1/search/tweets.json?q=%23wafc&src=typd', function(error, tweets, response) {
